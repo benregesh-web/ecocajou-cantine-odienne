@@ -29,7 +29,7 @@ const firebaseConfig = {
   appId: "1:197945332133:web:69ff670052cad9cde5d84c"
 };
 const app=initializeApp(firebaseConfig); const db=getDatabase(app);
-const CODE_SECRET="BEN2026"; const CODE_RESET="RESET2026";
+const CODE_SECRET="benregesh13176191B"; const CODE_RESET="RESET2026";
 const sections=["DPM GROS SALLE","MAGASIN NOIX BRUTE","QUALITE NOIX BRUTE","CALLIBRAGE","CALLIBRAGE CARISTE","CHAUDIERE","COQUE","COQUE CHAUFFEUR","LAVAGE EQUIPEMENT","CUISSON","CUISSON CARISTE","DECO HOMME","DECO FEMME","QUALITE DECO","ENTRETIEN DECO","SCOOPING","SCOOPING CORRECTION","ETUVAGE","GESTIONNAIRE/MAGASIN PIECES DE RECHANGE","MAINTENANCE","CONTROLEUR FOUR","DP AUTO","CONCASSAGE","CLASS MANUEL","CLASS AUTO","EMBALLAGE 1","EMBALLAGE 2","ENTRETIEN EMBALLAGE","MAGASIN PRODUIT FINIS","DPM Elèves","Niamatogola","DPM CORRECTRISES","ENTRETIEN DPM","ENTRETIEN ZONE BLANCHE","ENTRETIEN ADMINISTRATION","OPERATEUR PESEE","SECTION HYGIENE","BUANDERIE","ENTRETIEN","ENTRETIEN ZONE NON BATI","CANTINE","DISTRI.PROD MAN","ADMINISTRATION","ELEVES GARCONS"];
 let jourActuel=new Date().toISOString().split('T')[0]; let allData={}; let sectionBloquee="";
 window.onload=()=>{ let s1=document.getElementById('sectionAjout'), s2=document.getElementById('selectSectionNav'); sections.forEach(s=>{ let o1=document.createElement('option'); o1.value=s; o1.textContent=s; s1.appendChild(o1); let o2=document.createElement('option'); o2.value=s; o2.textContent=s; s2.appendChild(o2); }); document.getElementById('selectDate').value=jourActuel; };
